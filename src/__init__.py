@@ -1,6 +1,6 @@
 
-from src.views import chat
 import os
+from src.views import chat
 from dotenv import load_dotenv
 from flask import Flask
 from src.db.store_index import Pinecone

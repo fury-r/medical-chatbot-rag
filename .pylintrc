@@ -410,6 +410,7 @@ logging-modules=logging
 
 
 [MESSAGES CONTROL]
+disable=import-error,missing-function-docstring,too-few-public-methods,too-many-instance-attributes,missing-class-docstring,missing-module-docstring,invalid-name,redefined-outer-name
 
 # Only show warnings with the listed confidence levels. Leave empty to show
 # all. Valid levels: HIGH, CONTROL_FLOW, INFERENCE, INFERENCE_FAILURE,
