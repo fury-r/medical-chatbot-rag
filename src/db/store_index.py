@@ -40,4 +40,4 @@ class Pinecone:
         self.__index_name = index_name
         self.index = self.client.Index(index_name) 
         self.index.delete(delete_all=True)
-        logging.log(logging.INFO, f"Updated index")
+        logging.log(logging.INFO, f"Updated index") 
