@@ -5,7 +5,6 @@ from src.helper.logger import logging
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory, ConversationBufferWindowMemory
 
-
 class MedicalRAG:
     def __init__(
             self,

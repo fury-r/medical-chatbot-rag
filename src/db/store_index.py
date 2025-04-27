@@ -2,7 +2,6 @@ from langchain_pinecone import PineconeVectorStore
 from src.helper.logger import logging
 from pinecone import Pinecone as PineconeClient
 
-
 class Pinecone:
     def __init__(self, api_key, env, index_name=None):
         logging.log(logging.INFO, "Initializing Pinecone client")

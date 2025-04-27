@@ -439,7 +439,7 @@ disable=
     redefined-outer-name
     missing-class-docstring
     too-many-instance-attributes
-
+    
 # Only show warnings with the listed confidence levels. Leave empty to show
 # all. Valid levels: HIGH, CONTROL_FLOW, INFERENCE, INFERENCE_FAILURE,
 # UNDEFINED.
