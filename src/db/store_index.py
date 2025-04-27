@@ -3,6 +3,9 @@ from src.helper.logger import logging
 from pinecone import Pinecone as PineconeClient
 
 class Pinecone:
+
+    # pylint: disable=missing-class-docstring
+
     def __init__(self, api_key, env, index_name=None):
         logging.log(logging.INFO, "Initializing Pinecone client")
 

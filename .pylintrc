@@ -436,9 +436,9 @@ disable=
     deprecated-pragma,
     use-symbolic-message-instead,
     use-implicit-booleaness-not-comparison-to-string,
-    redefined-outer-name
-    missing-class-docstring
-    too-many-instance-attributes
+    redefined-outer-name,
+    missing-class-docstring,
+    too-many-instance-attributes,
     
 # Only show warnings with the listed confidence levels. Leave empty to show
 # all. Valid levels: HIGH, CONTROL_FLOW, INFERENCE, INFERENCE_FAILURE,
