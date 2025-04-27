@@ -2,12 +2,18 @@ import os
 import logging
 from datetime import datetime
 
-LOG_FILE=f"mcqgen-{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+LOG_FILE = f"mcqgen-{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+
+
 def initLogger():
-    log_path=os.path.join(os.getcwd(),"logs")
+    log_path = os.path.join(os.getcwd(), "logs")
 
-    os.makedirs(log_path,exist_ok=True)
+    os.makedirs(log_path, exist_ok=True)
 
-    LOG_FILEPATH=os.path.join(log_path,LOG_FILE)
+    LOG_FILEPATH = os.path.join(log_path, LOG_FILE)
 
-    logging.basicConfig(level=logging.INFO,filename=LOG_FILEPATH,format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s",filemode="a")
+    logging.basicConfig(
+        level=logging.INFO,
+        filename=LOG_FILEPATH,
+        format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s",
+        filemode="a")

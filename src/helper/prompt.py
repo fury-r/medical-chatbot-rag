@@ -1,6 +1,6 @@
-from langchain.prompts import  PromptTemplate
+from langchain.prompts import PromptTemplate
 
-prompt='''
+prompt = '''
 Use the following pieces of information to answer the user's question.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
 
@@ -10,4 +10,8 @@ Question: {question}
 Only return the helpful answer below and nothing else.
 Helpful answer:
 '''
-prompt_template=PromptTemplate(input_variables=["context","question"],template=prompt)
+prompt_template = PromptTemplate(
+    input_variables=[
+        "context",
+        "question"],
+    template=prompt)
