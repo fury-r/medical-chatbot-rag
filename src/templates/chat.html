@@ -394,7 +394,14 @@
             return wrapper;
         }
 
-        function addLoader() { const l = document.createElement('div'); l.className = 'msg bot loader'; l.innerHTML = '<span></span><span></span><span></span>'; messages.appendChild(l); messages.scrollTop = messages.scrollHeight; return l; }
+        function addLoader() {
+            const l = document.createElement('div');
+            l.className = 'msg bot loader';
+            l.innerHTML = '<span></span><span></span><span></span>';
+            messages.appendChild(l);
+            messages.scrollTop = messages.scrollHeight;
+            return l;
+        }
     </script>
 </body>
 

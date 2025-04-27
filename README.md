@@ -90,7 +90,14 @@ Save the model inside the `model/` directory.
 - 📦 Local model serving (with `.bin` weights)
 
 ---
+## 📸 Screenshots
 
+
+![Landing Page](./images/output-2.png)
+![Landing Page](./images/output-1.png)
+![Bot Answer](./images/bot-answer.png)
+
+---
 
 ---
 
