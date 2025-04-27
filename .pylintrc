@@ -410,7 +410,23 @@ logging-modules=logging
 
 
 [MESSAGES CONTROL]
-disable=import-error,missing-function-docstring,too-few-public-methods,too-many-instance-attributes,missing-class-docstring,missing-module-docstring,invalid-name,redefined-outer-name
+# Disable the following warnings:
+disable=
+    missing-module-docstring,  # Missing module-level docstring
+    missing-function-docstring,  # Missing function/method docstring
+    import-error,  # Unable to import modules
+    wrong-import-order,  # Incorrect import order
+    ungrouped-imports,  # Imports from the same package are not grouped
+    invalid-name,  # Function/variable naming convention violations
+    too-many-arguments,  # Too many arguments in a function/method
+    too-many-positional-arguments,  # Too many positional arguments
+    f-string-without-interpolation,  # f-string without any interpolation
+    logging-fstring-interpolation,  # Logging using f-string
+    broad-exception-caught,  # Catching too general exceptions
+    superfluous-parens,  # Unnecessary parentheses
+    unspecified-encoding,  # Open without specifying encoding
+    too-few-public-methods,  # Too few public methods in class
+    too-many-instance-attributes  # Too many instance attributesstring,too-few-public-methods,too-many-instance-attributes,missing-class-docstring,missing-module-docstring,invalid-name,redefined-outer-name
 
 # Only show warnings with the listed confidence levels. Leave empty to show
 # all. Valid levels: HIGH, CONTROL_FLOW, INFERENCE, INFERENCE_FAILURE,
