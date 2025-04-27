@@ -5,6 +5,9 @@ load_dotenv()
 
 
 class Config:
+    """Class consists of environment variables"""
+
+    # pylint: disable=too-many-instance-attributes
     def __init__(self):
         logging.log(logging.INFO, "loading configs for environment")
         self.huggingface_api_token = os.getenv("HUGGINGFACE_API_TOKEN")

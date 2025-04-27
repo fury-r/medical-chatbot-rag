@@ -6,6 +6,8 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory, ConversationBufferWindowMemory
 
 class MedicalRAG:
+    """Class representing a rag config"""
+
     def __init__(
             self,
             model_path,
