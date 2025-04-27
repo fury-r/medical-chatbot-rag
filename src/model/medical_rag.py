@@ -1,9 +1,7 @@
-
 from langchain_community.llms import CTransformers
 from langchain.chains import RetrievalQA  # RAG
-from src.helper.prompt import prompt_template
+from src.helper.prompt import prompt_template as default_prompt_template
 from src.helper.logger import logging
-
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory, ConversationBufferWindowMemory
 
@@ -16,7 +14,7 @@ class MedicalRAG:
             config,
             retriever,
             k=0,
-            prompt_template=prompt_template):
+            prompt_template=default_prompt_template):
         logging.log(
             logging.INFO,
             "creating RAG with model {model_path} and type {model_type}")
