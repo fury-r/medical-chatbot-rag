@@ -105,10 +105,12 @@ Save the model inside the `model/` directory.
 ![Landing Page](./output/output-1.png)
 ![Bot Answer](./output/bot-answer.png)
 
-## With Conversation History
+## With Conversation History (k=4)
 
-![Conversation History](./output/output-3.mp4)
-
+<video width="600" controls>
+  <source src="./output/output-3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video
 ---
 
 ---
