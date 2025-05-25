@@ -48,9 +48,18 @@ class MedicalRAG:
         logging.log(logging.INFO, f"Creating RAG with memory, k={k}")
 
         memory = (
-            ConversationBufferWindowMemory(memory_key="chat_history", k=k, return_messages=True, output_key="answer")
+            ConversationBufferWindowMemory(
+                memory_key="chat_history", 
+                k=k, 
+                return_messages=True, 
+                output_key="answer"
+                )
             if k > 0
-            else ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key="answer")
+            else ConversationBufferMemory(
+                memory_key="chat_history", 
+                return_messages=True, 
+                output_key="answer"
+                )
         )
 
         self.qa = ConversationalRetrievalChain.from_llm(
