@@ -426,7 +426,7 @@ disable=
     superfluous-parens,  # Unnecessary parentheses
     unspecified-encoding,  # Open without specifying encoding
     too-few-public-methods,  # Too few public methods in class
-    too-many-instance-attributes  # Too many instance attributesstring,too-few-public-methods,too-many-instance-attributes,missing-class-docstring,missing-module-docstring,invalid-name,redefined-outer-name
+    too-many-instance-attributes,  # Too many instance attributesstring,too-few-public-methods,too-many-instance-attributes,missing-class-docstring,missing-module-docstring,invalid-name,redefined-outer-name
     raw-checker-failed,
     bad-inline-option,
     locally-disabled,
@@ -440,8 +440,7 @@ disable=
     missing-class-docstring,
     too-many-instance-attributes,
     wrong-import-position,
-    too-many-instance-attributes
-    raw-checker-failed
+
 # Only show warnings with the listed confidence levels. Leave empty to show
 # all. Valid levels: HIGH, CONTROL_FLOW, INFERENCE, INFERENCE_FAILURE,
 # UNDEFINED.
