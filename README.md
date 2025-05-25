@@ -20,15 +20,19 @@ This project allows users to ask health-related questions and receive intelligen
 🖌️ requirements.txt      # Python dependencies
 🖌️ README.md             # Project documentation (this file)
 ```
+
 ## 👅 Download the Llama 2 Model
+
 We are using **Llama 2 7B Chat** model (compressed GGML format).
 
 👉 You can download the model from [Hugging Face](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main)
 
 Recommended file:
+
 ```
 llama-2-7b-chat.ggmlv3.q4_0.bin
 ```
+
 Save the model inside the `model/` directory.
 
 > **Note**: You can use a different GGML model version depending on your hardware.
@@ -38,18 +42,21 @@ Save the model inside the `model/` directory.
 ## 🚀 How to Run
 
 1. **Clone the repo**
+
    ```bash
    git clone https://github.com/fury-r/medical-chatbot-rag.git
    cd medical-chatbot-rag
    ```
 
 2. **Create a virtual environment**
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
 3. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -71,12 +78,13 @@ Save the model inside the `model/` directory.
    MODEL_MEMORY= //optonal
    ```
 
-4. **Start the app**
+5. **Start the app**
+
    ```bash
    python app.py
    ```
 
-5. Open [http://localhost:5000](http://localhost:5000) in your browser 🎯
+6. Open [http://localhost:5000](http://localhost:5000) in your browser 🎯
 
 ---
 
@@ -90,12 +98,16 @@ Save the model inside the `model/` directory.
 - 📦 Local model serving (with `.bin` weights)
 
 ---
+
 ## 📸 Screenshots
 
+![Landing Page](./output/output-2.png)
+![Landing Page](./output/output-1.png)
+![Bot Answer](./output/bot-answer.png)
 
-![Landing Page](./images/output-2.png)
-![Landing Page](./images/output-1.png)
-![Bot Answer](./images/bot-answer.png)
+## With Conversation History
+
+![Conversation History](./output/output-3.mp4)
 
 ---
 
