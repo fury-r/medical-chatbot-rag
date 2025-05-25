@@ -18,8 +18,8 @@ def get_answer():
         input_query = msg['text']
         result = rag_qa.query(input_query)
 
-        logging.log(logging.INFO, f"raw response for model:{result}")
-        return str(result["result"])
+        logging.log(logging.INFO, f" response for model:{result}")
+        return str(result)
     except Exception as e:
         logging.log(logging.ERROR, f"error occured: {e}", stack_info=True)
         return "Error occurred", 500

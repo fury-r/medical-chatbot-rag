@@ -1,5 +1,4 @@
 import os
-from src.views import chat
 from dotenv import load_dotenv
 from flask import Flask
 from src.db.store_index import Pinecone
@@ -13,6 +12,10 @@ initLogger()
 
 template_dir = os.path.join(os.getcwd(), 'src', 'templates')
 static_dir = os.path.join(os.getcwd(), 'src', 'static')
+load_dotenv()
+
+config = Config()
+
 app = Flask(
     __name__,
     template_folder=template_dir,
@@ -20,9 +23,7 @@ app = Flask(
     static_url_path='/static'
 )
 
-load_dotenv()
 
-config = Config()
 
 docs = load_pdf("./data")
 text_chunks = create_chunks(docs)
@@ -39,6 +40,9 @@ pinecone_client.add_to_vectordb(
     embedding, config.pinecone_index_name
 )
 
+# existing vectordb with embeddings
+# pinecone_client.connect_to_vectordb(embedding,config.pinecone_index_name)
+
 rag_qa = MedicalRAG(
     model_path=config.model_path,
     model_type=config.model_type,
@@ -54,3 +58,5 @@ rag_qa = MedicalRAG(
         }
     )
 )
+
+from src.views import chat

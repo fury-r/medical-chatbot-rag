@@ -38,6 +38,14 @@ class Pinecone:
             index_name=self.__index_name,
         )
 
+    def connect_to_vectordb(self,embedding,index_name):
+        if index_name:
+            self.set_index(index_name)
+
+        self.vectordb = PineconeVectorStore.from_existing_index(
+            index_name=self.__index_name,
+            embedding=embedding,
+        )
     def clear_vectordb(self):
         self.vectordb.delete(None, True)
 
@@ -45,5 +53,8 @@ class Pinecone:
         logging.log(logging.INFO, f"Update index_name: {index_name}")
         self.__index_name = index_name
         self.index = self.client.Index(index_name)
-        self.index.delete(delete_all=True)
-        logging.log(logging.INFO, f"Updated index")
+        try:
+            self.index.delete(delete_all=True, namespace="")  # default namespace
+            logging.log(logging.INFO, f"Cleared index: {index_name}")
+        except Exception as e:
+            logging.log(logging.ERROR, f"Error deleting namespace in index '{index_name}': {e}")
