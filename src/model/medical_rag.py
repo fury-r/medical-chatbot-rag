@@ -49,16 +49,16 @@ class MedicalRAG:
 
         memory = (
             ConversationBufferWindowMemory(
-                memory_key="chat_history", 
-                k=k, 
-                return_messages=True, 
-                output_key="answer"
+                    memory_key="chat_history", 
+                    k=k, 
+                    return_messages=True, 
+                    output_key="answer"
                 )
             if k > 0
             else ConversationBufferMemory(
-                memory_key="chat_history", 
-                return_messages=True, 
-                output_key="answer"
+                    memory_key="chat_history", 
+                    return_messages=True, 
+                    output_key="answer"
                 )
         )
 
