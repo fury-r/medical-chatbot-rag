@@ -84,7 +84,7 @@ Save the model inside the `model/` directory.
    python app.py
    ```
 
-6. Open [http://localhost:5000](http://localhost:5000) in your browser 🎯
+6. Open [http://localhost:8080](http://localhost:8080) in your browser 🎯
 
 ---
 
