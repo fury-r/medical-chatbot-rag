@@ -16,6 +16,7 @@ This project allows users to ask health-related questions and receive intelligen
 📌 model/            # Model loading and Retrieval-Augmented Generation (RAG) logic
 📌 static/           # Frontend CSS styles
 📌 templates/        # HTML templates (chat UI)
+📌 views/            # Flask views
 
 🖌️ requirements.txt      # Python dependencies
 🖌️ README.md             # Project documentation (this file)
