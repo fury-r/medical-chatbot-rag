@@ -108,10 +108,8 @@ Save the model inside the `model/` directory.
 
 ## With Conversation History (k=4)
 
-<video width="600" controls>
-  <source src="./output/output-3.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video
+[![Conversation Context Retention](./output/output-4.png)](./output/output-3.mp4)
+
 ---
 
 ---
