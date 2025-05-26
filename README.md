@@ -138,7 +138,7 @@ You can manage all environment variables and model paths using the `Config` clas
 - Better Medical Disclaimer System
 - Real-time Typing Indicators
 
----
+This can be used as a starting point for building more advanced chatbots to any domain, not just medical. Just replace the based data and feed data to the pinecone db.
 
 ## 📄 License
 
